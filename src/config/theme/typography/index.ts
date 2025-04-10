@@ -1,0 +1,105 @@
+import { ThemeProps } from "src/config/theme/types";
+
+export const typoGraphy = (Props: ThemeProps) => {
+  return {
+    h1: {
+      fontSize: "4rem",
+      fontWeight: 900,
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textSecondary,
+      fontFamily: "iranyekan",
+    },
+    h2: {
+      fontSize: "2.5rem",
+      fontWeight: "900",
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textSecondary,
+      fontFamily: "iranyekan",
+    },
+    h3: {
+      fontSize: "1.5rem",
+      fontWeight: "800",
+      lineHeight: "2.5rem",
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textSecondary,
+      fontFamily: "iranyekan",
+    },
+    h4: {
+      fontSize: "1.25rem",
+      fontWeight: "800",
+      lineHeight: "2rem",
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textSecondary,
+      fontFamily: "iranyekan",
+    },
+    h5: {
+      fontSize: "1.125rem",
+      fontWeight: "800",
+      lineHeight: "2rem",
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textSecondary,
+      fontFamily: "iranyekan",
+    },
+    h6: {
+      fontSize: "1rem",
+      fontWeight: "800",
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textSecondary,
+      fontFamily: "iranyekan",
+    },
+    body1: {
+      body1: {
+        fontSize: "1rem",
+        fontWeight: "700",
+        letterSpacing: "-1%",
+        color: Props.primaryThemeColors.textPrimary,
+        fontFamily: "iranyekan",
+      },
+      body2: {
+        fontSize: "1rem",
+        fontWeight: "700",
+        letterSpacing: "-1%",
+        color: Props.primaryThemeColors.textSecondary,
+        fontFamily: "iranyekan",
+      },
+      caption: {
+        fontSize: "0.875rem",
+        fontWeight: "700",
+        letterSpacing: "-1%",
+        color: Props.primaryThemeColors.textSecondary,
+        fontFamily: "iranyekan",
+      },
+      subtitle1: {
+        fontSize: "0.857rem",
+        fontWeight: "400",
+        letterSpacing: "-1%",
+        color: Props.primaryThemeColors.textSubtitle,
+        fontFamily: "iranyekan",
+      },
+      subtitle2: {
+        fontSize: "0.857rem",
+        fontWeight: "700",
+        letterSpacing: "-1%",
+        color: Props.primaryThemeColors.textSubtitle,
+        fontFamily: "iranyekan",
+      },
+      button: {
+        fontSize: "0.875rem",
+        fontWeight: "700",
+        letterSpacing: "-1%",
+        color: Props.primaryThemeColors.textButton,
+        fontFamily: "iranyekan",
+      },
+      fontWeightRegular: "500",
+      fontWeightBold: "600",
+      fontSize: Number(Props.fontSize),
+      fontFamily: [
+        "iranyekan",
+        "sans-serif",
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+      ].join(","),
+    },
+  };
+};
