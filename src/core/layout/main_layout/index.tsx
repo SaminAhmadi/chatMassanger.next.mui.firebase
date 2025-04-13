@@ -7,14 +7,15 @@ import MuiThemeProvider from "@/src/providers/mui-theme-providers";
 import { MainLayoutProps } from "@/src/core/layout/main_layout/types";
 // components
 import Header from "@/src/core/layout/main_layout/components/header";
+import BottomNav from "@/src/core/layout/main_layout/components/nav";
 
 const MainLayout: FC<MainLayoutProps> = (props) => {
   return (
     <MuiThemeProvider>
       <Container
         component="header"
+        maxWidth="sm"
         sx={{
-          maxWidth: "12rem",
           bgcolor: "primary.main",
           borderTopLeftRadius: "1.2rem",
           borderTopRightRadius: "1.2rem",
@@ -26,15 +27,26 @@ const MainLayout: FC<MainLayoutProps> = (props) => {
       </Container>
       <Container
         component="main"
-        sx={{ maxWidth: "12rem", bgcolor: "secondary.main" }}
+        maxWidth="sm"
+        sx={{
+          height: "calc(80rem - 100vh)",
+          bgcolor: "secondary.light",
+          overflowY: "scroll",
+        }}
       >
         {props.children}
       </Container>
       <Container
-        component="footer"
-        sx={{ maxWidth: "12rem", bgcolor: "secondary.main" }}
+        component="nav"
+        maxWidth="sm"
+        sx={{
+          bgcolor: "secondary.light",
+          px: 2,
+          py: 3,
+          boxShadow: "-1px -2px 23px -9px rgba(0,0,0,0.6)",
+        }}
       >
-        فوتر
+        <BottomNav />
       </Container>
     </MuiThemeProvider>
   );

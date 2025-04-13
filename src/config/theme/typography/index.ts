@@ -46,7 +46,7 @@ export const typography = (Props: ThemeProps) => {
       fontSize: "1rem",
       fontWeight: "700",
       letterSpacing: "-1%",
-      color: Props.primaryThemeColors.textPrimary,
+      color: Props.primaryThemeColors.textSubtitle,
     },
     body2: {
       fontSize: "1rem",

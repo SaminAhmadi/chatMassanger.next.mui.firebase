@@ -18,7 +18,7 @@ const MuiThemeProvider: FC<LayoutChildrenProps> = (props) => {
           neutral: "#686a8a",
           textPrimary: "#FFF",
           textSecondary: "#000",
-          textSubtitle: "#d0d1db",
+          textSubtitle: "#686a8a",
           textButton: "#40c4ff",
           error: "#f44336",
           warning: "#ffc700",

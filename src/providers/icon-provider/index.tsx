@@ -17,7 +17,7 @@ const IconProvider: FC<customIconProps> = (props) => {
   return (
     <IconComponent
       {...props}
-      color={props.color ? props.color : theme.palette.icon.light}
+      color={props.color ? props.color : theme.palette.icon.main}
     />
   );
 };

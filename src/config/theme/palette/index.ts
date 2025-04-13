@@ -15,8 +15,8 @@ export const palette = () => {
       dark: "#092a51",
     },
     secondary: {
-      light: "#40c4ff",
-      main: "#686a8a",
+      light: "#FFF",
+      main: "#40c4ff",
       dark: "#1b526b",
     },
     neutral: {
@@ -43,8 +43,9 @@ export const palette = () => {
       main: "#40c4ff",
     },
     icon: {
-      light: "#FFF",
-      main: "#40c4ff",
+      light: "#686a8a",
+      main: "#FFF",
+      dark: "#40c4ff",
     },
   };
 };
