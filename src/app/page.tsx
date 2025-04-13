@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
 
 export default function Home() {
-  return <Typography variant="h1">خانه</Typography>;
+  return <Typography variant="h3">خانه</Typography>;
 }

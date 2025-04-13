@@ -1,8 +1,10 @@
 "use client";
 import { FC } from "react";
-import { LayoutChildrenProps } from "src/config/theme/types";
 import { ThemeProvider } from "@mui/material";
-import ThemeConfigs from "src/config/theme";
+// types
+import { LayoutChildrenProps } from "@/src/config/theme/types";
+// components
+import ThemeConfigs from "@/src/config/theme";
 
 const MuiThemeProvider: FC<LayoutChildrenProps> = (props) => {
   return (
@@ -16,7 +18,7 @@ const MuiThemeProvider: FC<LayoutChildrenProps> = (props) => {
           neutral: "#686a8a",
           textPrimary: "#FFF",
           textSecondary: "#000",
-          textSubtitle: "#d0d1db",
+          textSubtitle: "#686a8a",
           textButton: "#40c4ff",
           error: "#f44336",
           warning: "#ffc700",

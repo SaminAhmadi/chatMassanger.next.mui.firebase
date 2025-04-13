@@ -1,8 +1,10 @@
+// main
 import type { Metadata } from "next";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
-import "public/styles/fonts/index.scss";
 import { ReactNode } from "react";
-import MuiThemeProvider from "src/providers/mui-theme-providers";
+// style
+import "@/src/assets/styles/globals.scss";
+// components
+import MainLayout from "@/src/core/layout/main_layout";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,9 +19,7 @@ export default function RootLayout({
   return (
     <html lang="fa-ir" dir="rtl">
       <body>
-        <AppRouterCacheProvider>
-          <MuiThemeProvider>{children}</MuiThemeProvider>
-        </AppRouterCacheProvider>
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );

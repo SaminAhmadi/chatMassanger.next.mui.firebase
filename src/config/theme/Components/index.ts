@@ -1,4 +1,5 @@
-import { ThemeProps } from "src/config/theme/types";
+// types
+import { ThemeProps } from "@/src/config/theme/types";
 
 export const components = (Props: ThemeProps) => {
   return {

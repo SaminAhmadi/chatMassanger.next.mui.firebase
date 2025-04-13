@@ -1,20 +1,19 @@
-import { ThemeProps } from "src/config/theme/types";
+// types
+import { ThemeProps } from "@/src/config/theme/types";
 
-export const typoGraphy = (Props: ThemeProps) => {
+export const typography = (Props: ThemeProps) => {
   return {
     h1: {
-      fontSize: "4rem",
+      fontSize: "3rem",
       fontWeight: 900,
       letterSpacing: "-1%",
-      color: Props.primaryThemeColors.textSecondary,
-      fontFamily: "iranyekan",
+      color: Props.primaryThemeColors.textPrimary,
     },
     h2: {
       fontSize: "2.5rem",
       fontWeight: "900",
       letterSpacing: "-1%",
       color: Props.primaryThemeColors.textSecondary,
-      fontFamily: "iranyekan",
     },
     h3: {
       fontSize: "1.5rem",
@@ -22,7 +21,6 @@ export const typoGraphy = (Props: ThemeProps) => {
       lineHeight: "2.5rem",
       letterSpacing: "-1%",
       color: Props.primaryThemeColors.textSecondary,
-      fontFamily: "iranyekan",
     },
     h4: {
       fontSize: "1.25rem",
@@ -30,7 +28,6 @@ export const typoGraphy = (Props: ThemeProps) => {
       lineHeight: "2rem",
       letterSpacing: "-1%",
       color: Props.primaryThemeColors.textSecondary,
-      fontFamily: "iranyekan",
     },
     h5: {
       fontSize: "1.125rem",
@@ -38,68 +35,58 @@ export const typoGraphy = (Props: ThemeProps) => {
       lineHeight: "2rem",
       letterSpacing: "-1%",
       color: Props.primaryThemeColors.textSecondary,
-      fontFamily: "iranyekan",
     },
     h6: {
       fontSize: "1rem",
       fontWeight: "800",
       letterSpacing: "-1%",
       color: Props.primaryThemeColors.textSecondary,
-      fontFamily: "iranyekan",
     },
     body1: {
-      body1: {
-        fontSize: "1rem",
-        fontWeight: "700",
-        letterSpacing: "-1%",
-        color: Props.primaryThemeColors.textPrimary,
-        fontFamily: "iranyekan",
-      },
-      body2: {
-        fontSize: "1rem",
-        fontWeight: "700",
-        letterSpacing: "-1%",
-        color: Props.primaryThemeColors.textSecondary,
-        fontFamily: "iranyekan",
-      },
-      caption: {
-        fontSize: "0.875rem",
-        fontWeight: "700",
-        letterSpacing: "-1%",
-        color: Props.primaryThemeColors.textSecondary,
-        fontFamily: "iranyekan",
-      },
-      subtitle1: {
-        fontSize: "0.857rem",
-        fontWeight: "400",
-        letterSpacing: "-1%",
-        color: Props.primaryThemeColors.textSubtitle,
-        fontFamily: "iranyekan",
-      },
-      subtitle2: {
-        fontSize: "0.857rem",
-        fontWeight: "700",
-        letterSpacing: "-1%",
-        color: Props.primaryThemeColors.textSubtitle,
-        fontFamily: "iranyekan",
-      },
-      button: {
-        fontSize: "0.875rem",
-        fontWeight: "700",
-        letterSpacing: "-1%",
-        color: Props.primaryThemeColors.textButton,
-        fontFamily: "iranyekan",
-      },
-      fontWeightRegular: "500",
-      fontWeightBold: "600",
-      fontSize: Number(Props.fontSize),
-      fontFamily: [
-        "iranyekan",
-        "sans-serif",
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-      ].join(","),
+      fontSize: "1rem",
+      fontWeight: "700",
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textSubtitle,
     },
+    body2: {
+      fontSize: "1rem",
+      fontWeight: "700",
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textSecondary,
+    },
+    caption: {
+      fontSize: "0.875rem",
+      fontWeight: "700",
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textSecondary,
+    },
+    subtitle1: {
+      fontSize: "0.857rem",
+      fontWeight: "400",
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textSubtitle,
+    },
+    subtitle2: {
+      fontSize: "0.857rem",
+      fontWeight: "700",
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textSubtitle,
+    },
+    button: {
+      fontSize: "0.875rem",
+      fontWeight: "700",
+      letterSpacing: "-1%",
+      color: Props.primaryThemeColors.textButton,
+    },
+    fontWeightRegular: "500",
+    fontWeightBold: "600",
+    fontSize: Number(Props.fontSize),
+    fontFamily: [
+      "iranyekan",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(","),
   };
 };
