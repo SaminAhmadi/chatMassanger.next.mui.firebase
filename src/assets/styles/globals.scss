@@ -1,8 +1,12 @@
-@import "tailwindcss";
-@forward 'public/styles/fonts/index';
+@forward 'public/styles/fonts/index.scss';
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
