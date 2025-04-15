@@ -29,12 +29,12 @@ const BottomNav: FC = () => {
       </Stack>
       <Stack alignItems="center">
         <IconProvider
-          icon="HambergerMenu"
+          icon="People"
           size={28}
           cursor="pointer"
           color={theme.palette.icon.light}
         />
-        <Typography variant="body1">تنظیمات</Typography>
+        <Typography variant="body1">مخاطبین</Typography>
       </Stack>
     </Stack>
   );
