@@ -55,7 +55,7 @@ export const typography = (Props: ThemeProps) => {
       color: Props.primaryThemeColors.textSecondary,
     },
     caption: {
-      fontSize: "0.875rem",
+      fontSize: "0.75rem",
       fontWeight: "700",
       letterSpacing: "-1%",
       color: Props.primaryThemeColors.textSecondary,

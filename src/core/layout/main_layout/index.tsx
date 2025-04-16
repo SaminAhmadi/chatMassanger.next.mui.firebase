@@ -16,11 +16,13 @@ const MainLayout: FC<MainLayoutProps> = (props) => {
         component="header"
         maxWidth="sm"
         sx={{
+          height: "12rem",
           bgcolor: "primary.main",
           borderTopLeftRadius: "1.2rem",
           borderTopRightRadius: "1.2rem",
-          pt: 10,
-          pb: 4,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <Header />
